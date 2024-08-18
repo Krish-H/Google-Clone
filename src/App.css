@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .video-rad{
+    border-radius: 25px;
+  }
+  /* styles.css */
+
+/* Adjust padding for small screens */
+.search-container {
+  padding: 0 8px; /* Adjust padding for small screens */
+}
+
+/* Ensure input grows to fill available space */
+.search-input {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+/* Adjust icon container to shrink properly */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust gap for small screens */
+}
+
+/* Ensure icon buttons shrink properly */
+.icon-button {
+  flex-shrink: 0;
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+  .search-container {
+    padding: 0 4px; /* Reduce padding for smaller screens */
+  }
+  
+  .icon-container {
+    gap: 4px; /* Reduce gap for smaller screens */
+  }
+  
+  .icon-button {
+    width: 24px;
+    height: 24px; /* Adjust icon size for smaller screens */
+  }
+}
+
+  
